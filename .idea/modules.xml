@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aerospike-connection-controller.iml" filepath="$PROJECT_DIR$/aerospike-connection-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nifi-aerospike-connection/nifi-aerospike-connection.iml" filepath="$PROJECT_DIR$/nifi-aerospike-connection/nifi-aerospike-connection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nifi-aerospike-connection-api/nifi-aerospike-connection-api.iml" filepath="$PROJECT_DIR$/nifi-aerospike-connection-api/nifi-aerospike-connection-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nifi-aerospike-connection-api-nar/nifi-aerospike-connection-api-nar.iml" filepath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/nifi-aerospike-connection-api-nar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nifi-aerospike-connection-nar/nifi-aerospike-connection-nar.iml" filepath="$PROJECT_DIR$/nifi-aerospike-connection-nar/nifi-aerospike-connection-nar.iml" />
+    </modules>
+  </component>
+</project>

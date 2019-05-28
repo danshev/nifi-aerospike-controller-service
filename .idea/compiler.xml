@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="nifi-aerospike-connection-api-nar" />
+        <module name="nifi-aerospike-connection-nar" />
+        <module name="nifi-aerospike-connection" />
+        <module name="nifi-aerospike-connection-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aerospike-connection-controller" target="1.8" />
+      <module name="nifi-aerospike-connection" target="1.8" />
+      <module name="nifi-aerospike-connection-api" target="1.8" />
+      <module name="nifi-aerospike-connection-api-nar" target="1.8" />
+      <module name="nifi-aerospike-connection-nar" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
