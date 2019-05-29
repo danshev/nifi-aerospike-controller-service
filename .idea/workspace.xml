@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69208fa6-8c8b-4636-8cb3-2ca5e188d7e5" name="Default Changelist" comment="" />
+    <list default="true" id="69208fa6-8c8b-4636-8cb3-2ca5e188d7e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike-connection/AerospikeConnectionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike-connection/AerospikeConnectionControllerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike-connection/TestProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike-connection/TestStandardMyService.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,33 +27,55 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike-connection/AerospikeConnectionControllerService.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="121" column="9" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+            <state relative-caret-position="475">
+              <caret line="145" selection-start-line="145" selection-end-line="145" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike-connection/AerospikeConnectionService.java">
+        <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike_connection/TestProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#0#1352#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="39" column="71" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike_connection/TestStandardMyService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>apns</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -55,6 +86,10 @@
         <option value="$PROJECT_DIR$/nifi-aerospike-connection-api/pom.xml" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike-connection/AerospikeConnectionService.java" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike-connection/AerospikeConnectionControllerService.java" />
+        <option value="$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionService.java" />
+        <option value="$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java" />
+        <option value="$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike_connection/TestProcessor.java" />
+        <option value="$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike_connection/TestStandardMyService.java" />
       </list>
     </option>
   </component>
@@ -65,17 +100,20 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="9" />
-    <option name="y" value="29" />
+    <option name="y" value="23" />
     <option name="width" value="1830" />
-    <option name="height" value="920" />
+    <option name="height" value="715" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,38 +124,105 @@
             <path>
               <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
               <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="aerospike_connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="aerospike_connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
               <item name="nifi-aerospike-connection-api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
               <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
               <item name="nifi-aerospike-connection-api" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
               <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
               <item name="nifi-aerospike-connection-api" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="maven-shared-archive-resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
               <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
               <item name="nifi-aerospike-connection-api" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="maven-shared-archive-resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="aerospike_connection" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -147,10 +252,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="29" width="1830" height="920" extended-state="0" />
+    <frame x="9" y="23" width="1830" height="715" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32997763" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23210292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -196,20 +301,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/aerospike-connection-controller.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike-connection/AerospikeConnectionControllerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike-connection/AerospikeConnectionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="240">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
           <folding>
             <element signature="e#0#1352#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike-connection/AerospikeConnectionControllerService.java">
+    <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="121" column="9" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+        <state relative-caret-position="180">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike-connection/TestProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike_connection/TestProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="39" column="71" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike_connection/TestStandardMyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
         </state>
       </provider>
     </entry>

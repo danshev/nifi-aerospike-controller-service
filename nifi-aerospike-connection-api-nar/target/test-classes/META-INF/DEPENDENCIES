@@ -1,0 +1,29 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+nifi-aerospike-connection-api-nar
+
+
+From: 'an unknown organization'
+  - Aerospike Java Client (http://www.aerospike.com) com.aerospike:aerospike-client:jar:4.1.11
+    License: Aerospike Client License  (https://github.com/aerospike/aerospike-client-java/blob/master/LICENSE.md)
+  - GNU Crypto (http://www.gnu.org/software/gnu-crypto) org.gnu:gnu-crypto:jar:2.0.1
+    License: The GNU General Public License  (http://www.gnu.org/licenses/gpl.html)
+  - luaj-jse (http://sourceforge.net/projects/luaj/) org.luaj:luaj-jse:jar:3.0
+    License: MIT License  (http://luaj.sourceforge.net/license.txt)
+
+From: 'Apache NiFi Project' (http://nifi.apache.org/)
+  - nifi-aerospike-connection-api (http://nifi.apache.org/nifi-nar-bundles/aerospike-connection-controller/nifi-aerospike-connection-api) com.danshev:nifi-aerospike-connection-api:jar:1.0-SNAPSHOT
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - nifi-standard-services-api-nar (http://nifi.apache.org/nifi-nar-bundles/nifi-standard-services/nifi-standard-services-api-nar) org.apache.nifi:nifi-standard-services-api-nar:nar:1.9.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'mindrot.org' (http://www.mindrot.org/)
+  - jbcrypt (http://www.mindrot.org/) org.mindrot:jbcrypt:jar:0.3m
+    License: ISC/BSD License 
+
+
+
+
