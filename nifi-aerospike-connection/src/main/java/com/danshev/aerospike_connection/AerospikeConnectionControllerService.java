@@ -19,6 +19,10 @@ package com.danshev.aerospike_connection;
 import com.aerospike.client.AerospikeClient;
 import com.aerospike.client.Host;
 import com.aerospike.client.policy.ClientPolicy;
+import com.aerospike.client.Bin;
+import com.aerospike.client.Key;
+import com.aerospike.client.policy.WritePolicy;
+import com.google.common.base.Strings;
 import org.apache.nifi.annotation.documentation.CapabilityDescription;
 import org.apache.nifi.annotation.documentation.Tags;
 import org.apache.nifi.annotation.lifecycle.OnDisabled;
@@ -36,9 +40,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-
 @Tags({ "aerospike"})
-@CapabilityDescription("Implementation of the Aerospike Controller Service.")
+@CapabilityDescription("Aerospike Connection Service.")
 public class AerospikeConnectionControllerService extends AbstractControllerService implements AerospikeConnectionService {
 
     private static final Logger log = LoggerFactory.getLogger(AerospikeConnectionControllerService.class);
@@ -46,26 +49,23 @@ public class AerospikeConnectionControllerService extends AbstractControllerServ
     public static final PropertyDescriptor AEROSPIKE_HOSTS = new PropertyDescriptor
         .Builder().name("AEROSPIKE_HOSTS")
         .displayName("Aerospike Hosts List")
-        .description("A pipe-separated list of 'host.name', port values for each of the Aerospike servers (e.g., 'a.host.name',3000|'another.host.name', 3000")
-        .expressionLanguageSupported(false)
+        .description("A pipe-delimited list of host.name,port sets for each of the Aerospike servers (example: a.host.name,3000|another.host.name,3000)")
         .required(true)
         .addValidator(StandardValidators.NON_EMPTY_VALIDATOR)
         .build();
 
     public static final PropertyDescriptor AEROSPIKE_USERNAME = new PropertyDescriptor
         .Builder().name("AEROSPIKE_USERNAME")
-        .displayName("Aerospike connection username")
+        .displayName("Aerospike username")
         .description("If necessary, the username for the Aerospike connection")
-        .expressionLanguageSupported(false)
         .required(false)
         .addValidator(StandardValidators.NON_EMPTY_VALIDATOR)
         .build();
 
     public static final PropertyDescriptor AEROSPIKE_PASSWORD = new PropertyDescriptor
         .Builder().name("AEROSPIKE_PASSWORD")
-        .displayName("Aerospike connection password")
+        .displayName("Aerospike password")
         .description("If necessary, the password for the Aerospike connection")
-        .expressionLanguageSupported(false)
         .required(false)
         .sensitive(true)
         .addValidator(StandardValidators.NON_EMPTY_VALIDATOR)
@@ -107,11 +107,12 @@ public class AerospikeConnectionControllerService extends AbstractControllerServ
         aerospike_username = context.getProperty(AEROSPIKE_USERNAME).getValue();
         aerospike_password = context.getProperty(AEROSPIKE_PASSWORD).getValue();
 
-        // TODO: determine if password is null or not -- if not null then:
-        //policy.user = aerospike_username;
-        //policy.password = aerospike_password;
+        if (!Strings.isNullOrEmpty(aerospike_password)) {
+            policy.user = aerospike_username;
+            policy.password = aerospike_password;
+        }
 
-        aerospikeClient = getConnection(); // Try the connection
+        aerospikeClient = getConnection();
         if (aerospikeClient == null) {
             log.error("Error: Couldn't connect to Aerospike.");
         }
@@ -119,25 +120,37 @@ public class AerospikeConnectionControllerService extends AbstractControllerServ
 
     @OnDisabled
     public void shutdown() {
-
+        aerospikeClient = null;
     }
 
     @Override
     public AerospikeClient getConnection() throws ProcessException {
         try {
             if (aerospikeClient == null) {
-
                 String[] hostStringsArray = aerospike_host_string.split("\\|[ ]*");
                 Integer hostsCount = hostStringsArray.length;
-
                 Host[] hosts = new Host[hostsCount];
-
                 for (int i = 0; i < hostStringsArray.length; i++) {
                     String[] hostPortArray = hostStringsArray[i].split(",[ ]*");
+                    log.info(" - Aerospike host: " + hostPortArray[0]);
                     hosts[i] = new Host(hostPortArray[0], Integer.parseInt(hostPortArray[1]));
                 }
 
                 aerospikeClient = new AerospikeClient(policy, hosts);
+            }
+        } catch (Exception e) {
+            log.error("Error: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        return aerospikeClient;
+    }
+
+    @Override
+    public AerospikeClient appendList(WritePolicy policy, Key fullKey, Bin bin) throws ProcessException {
+        try {
+            if (aerospikeClient != null) {
+                aerospikeClient.append(policy, fullKey, bin);
             }
         } catch (Exception e) {
             log.error("Error: " + e.getMessage());

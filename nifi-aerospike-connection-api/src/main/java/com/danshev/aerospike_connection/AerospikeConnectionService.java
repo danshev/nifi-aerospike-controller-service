@@ -16,17 +16,19 @@
  */
 package com.danshev.aerospike_connection;
 
+import com.aerospike.client.AerospikeClient;
+import com.aerospike.client.Bin;
+import com.aerospike.client.Key;
+import com.aerospike.client.policy.WritePolicy;
 import org.apache.nifi.annotation.documentation.CapabilityDescription;
 import org.apache.nifi.annotation.documentation.Tags;
 import org.apache.nifi.controller.ControllerService;
 import org.apache.nifi.processor.exception.ProcessException;
-
-import com.aerospike.client.AerospikeClient;
 
 @Tags({"aerospike"})
 @CapabilityDescription("Aerospike Connection Service")
 public interface AerospikeConnectionService extends ControllerService {
 
     public AerospikeClient getConnection()  throws ProcessException;
-
+    public AerospikeClient appendList(WritePolicy policy, Key fullKey, Bin bin) throws ProcessException;
 }
