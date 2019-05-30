@@ -16,11 +16,9 @@
  */
 package com.danshev.aerospike_connection;
 
-import com.aerospike.client.AerospikeClient;
-import com.aerospike.client.Host;
+import com.aerospike.client.*;
+import com.aerospike.client.cdt.ListOperation;
 import com.aerospike.client.policy.ClientPolicy;
-import com.aerospike.client.Bin;
-import com.aerospike.client.Key;
 import com.aerospike.client.policy.WritePolicy;
 import com.google.common.base.Strings;
 import org.apache.nifi.annotation.documentation.CapabilityDescription;
@@ -39,6 +37,7 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 
 @Tags({ "aerospike"})
 @CapabilityDescription("Aerospike Connection Service.")
@@ -127,13 +126,14 @@ public class AerospikeConnectionControllerService extends AbstractControllerServ
     public AerospikeClient getConnection() throws ProcessException {
         try {
             if (aerospikeClient == null) {
-                String[] hostStringsArray = aerospike_host_string.split("\\|[ ]*");
-                Integer hostsCount = hostStringsArray.length;
+                final String[] hostStringsArray = aerospike_host_string.split("[\\r\\n]+");
+                final Integer hostsCount = hostStringsArray.length;
                 Host[] hosts = new Host[hostsCount];
                 for (int i = 0; i < hostStringsArray.length; i++) {
-                    String[] hostPortArray = hostStringsArray[i].split(",[ ]*");
+                    String[] hostPortArray = hostStringsArray[i].split(",");
                     log.info(" - Aerospike host: " + hostPortArray[0]);
-                    hosts[i] = new Host(hostPortArray[0], Integer.parseInt(hostPortArray[1]));
+                    hosts[i] = new Host(hostPortArray[0].replaceAll("\\s+",""),
+                            Integer.parseInt(hostPortArray[1].replaceAll("\\s+","")));
                 }
 
                 aerospikeClient = new AerospikeClient(policy, hosts);
@@ -147,16 +147,63 @@ public class AerospikeConnectionControllerService extends AbstractControllerServ
     }
 
     @Override
-    public AerospikeClient appendList(WritePolicy policy, Key fullKey, Bin bin) throws ProcessException {
+    public AerospikeClient append(Key fullKey, Value value) throws ProcessException {
         try {
             if (aerospikeClient != null) {
-                aerospikeClient.append(policy, fullKey, bin);
+                WritePolicy policy = new WritePolicy();
+                policy.sendKey = true;
+                aerospikeClient.operate(policy, fullKey, ListOperation.append("events", value));
             }
         } catch (Exception e) {
             log.error("Error: " + e.getMessage());
             e.printStackTrace();
         }
 
-        return aerospikeClient;
+        return null;
     }
+
+    @Override
+    public AerospikeClient remove(Key fullKey) throws ProcessException {
+        try {
+            if (aerospikeClient != null) {
+                WritePolicy policy = new WritePolicy();
+                policy.sendKey = true;
+                aerospikeClient.delete(policy, fullKey);
+            }
+        } catch (Exception e) {
+            log.error("Error: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    /*
+    @Override
+    public AerospikeClient execute(String clientMethod, Map<String, String> clientArgs) throws
+            SecurityException, NoSuchMethodException, InvocationTargetException {
+
+        Method method;
+
+        try {
+            if (aerospikeClient != null) method = aerospikeClient.getClass().getMethod("clientMethod", null);
+        } catch (SecurityException e) {
+
+        } catch (NoSuchMethodException e) {
+
+        }
+
+        try {
+            method.invoke(aerospikeClient, null);
+        } catch (IllegalArgumentException e) {
+
+        } catch (IllegalAccessException e) {
+
+        } catch (InvocationTargetException e) {
+
+        }
+
+        return null;
+    }
+    */
 }

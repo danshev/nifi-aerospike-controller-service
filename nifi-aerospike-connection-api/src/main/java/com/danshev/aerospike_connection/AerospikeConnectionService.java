@@ -17,9 +17,8 @@
 package com.danshev.aerospike_connection;
 
 import com.aerospike.client.AerospikeClient;
-import com.aerospike.client.Bin;
 import com.aerospike.client.Key;
-import com.aerospike.client.policy.WritePolicy;
+import com.aerospike.client.Value;
 import org.apache.nifi.annotation.documentation.CapabilityDescription;
 import org.apache.nifi.annotation.documentation.Tags;
 import org.apache.nifi.controller.ControllerService;
@@ -30,5 +29,6 @@ import org.apache.nifi.processor.exception.ProcessException;
 public interface AerospikeConnectionService extends ControllerService {
 
     public AerospikeClient getConnection()  throws ProcessException;
-    public AerospikeClient appendList(WritePolicy policy, Key fullKey, Bin bin) throws ProcessException;
+    public AerospikeClient append(Key fullKey, Value value) throws ProcessException;
+    public AerospikeClient remove(Key fullKey) throws ProcessException;
 }
