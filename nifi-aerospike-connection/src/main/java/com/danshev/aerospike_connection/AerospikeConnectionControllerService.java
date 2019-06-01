@@ -147,7 +147,7 @@ public class AerospikeConnectionControllerService extends AbstractControllerServ
     }
 
     @Override
-    public AerospikeClient append(Key fullKey, Value value) throws ProcessException {
+    public void nifiAppend(Key fullKey, Value value) throws ProcessException {
         try {
             if (aerospikeClient != null) {
                 WritePolicy policy = new WritePolicy();
@@ -158,24 +158,22 @@ public class AerospikeConnectionControllerService extends AbstractControllerServ
             log.error("Error: " + e.getMessage());
             e.printStackTrace();
         }
-
-        return null;
     }
 
     @Override
-    public AerospikeClient remove(Key fullKey) throws ProcessException {
+    public Record nifiRemove(Key fullKey) throws ProcessException {
+        Record lastValue = null;
         try {
             if (aerospikeClient != null) {
-                WritePolicy policy = new WritePolicy();
-                policy.sendKey = true;
-                aerospikeClient.delete(policy, fullKey);
+                lastValue = aerospikeClient.get(null, fullKey);
+                if (lastValue != null) aerospikeClient.delete(null, fullKey);
             }
         } catch (Exception e) {
             log.error("Error: " + e.getMessage());
             e.printStackTrace();
         }
 
-        return null;
+        return lastValue;
     }
 
     /*

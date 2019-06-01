@@ -18,6 +18,7 @@ package com.danshev.aerospike_connection;
 
 import com.aerospike.client.AerospikeClient;
 import com.aerospike.client.Key;
+import com.aerospike.client.Record;
 import com.aerospike.client.Value;
 import org.apache.nifi.annotation.documentation.CapabilityDescription;
 import org.apache.nifi.annotation.documentation.Tags;
@@ -27,8 +28,7 @@ import org.apache.nifi.processor.exception.ProcessException;
 @Tags({"aerospike"})
 @CapabilityDescription("Aerospike Connection Service")
 public interface AerospikeConnectionService extends ControllerService {
-
     public AerospikeClient getConnection()  throws ProcessException;
-    public AerospikeClient append(Key fullKey, Value value) throws ProcessException;
-    public AerospikeClient remove(Key fullKey) throws ProcessException;
+    public void nifiAppend(Key fullKey, Value value) throws ProcessException;
+    public Record nifiRemove(Key fullKey) throws ProcessException;
 }
