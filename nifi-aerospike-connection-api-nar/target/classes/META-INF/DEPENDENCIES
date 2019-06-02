@@ -31,8 +31,6 @@ From: 'an unknown organization'
 From: 'Apache NiFi Project' (http://nifi.apache.org/)
   - nifi-aerospike-connection-api (http://nifi.apache.org/nifi-nar-bundles/aerospike-connection-controller/nifi-aerospike-connection-api) com.danshev:nifi-aerospike-connection-api:jar:1.0-SNAPSHOT
     License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
-  - nifi-standard-services-api-nar (http://nifi.apache.org/nifi-nar-bundles/nifi-standard-services/nifi-standard-services-api-nar) org.apache.nifi:nifi-standard-services-api-nar:nar:1.9.2
-    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
 
 From: 'mindrot.org' (http://www.mindrot.org/)
   - jbcrypt (http://www.mindrot.org/) org.mindrot:jbcrypt:jar:0.3m
