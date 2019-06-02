@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69208fa6-8c8b-4636-8cb3-2ca5e188d7e5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -24,11 +25,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="161" column="59" selection-start-line="161" selection-start-column="59" selection-end-line="161" selection-end-column="59" />
+            <state relative-caret-position="130">
+              <caret line="151" column="67" lean-forward="true" selection-start-line="151" selection-start-column="67" selection-end-line="151" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -53,10 +63,10 @@
         <option value="$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike-connection/AerospikeConnectionControllerService.java" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike_connection/TestProcessor.java" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike_connection/TestStandardMyService.java" />
-        <option value="$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionService.java" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection-api/pom.xml" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection-nar/pom.xml" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/pom.xml" />
+        <option value="$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionService.java" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java" />
       </list>
     </option>
@@ -117,6 +127,41 @@
               <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
               <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
               <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="aerospike_connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -236,13 +281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection-api-nar/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -264,10 +302,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="161" column="59" selection-start-line="161" selection-start-column="59" selection-end-line="161" selection-end-column="59" />
+        <state relative-caret-position="130">
+          <caret line="151" column="67" lean-forward="true" selection-start-line="151" selection-start-column="67" selection-end-line="151" selection-end-column="67" />
         </state>
       </provider>
     </entry>

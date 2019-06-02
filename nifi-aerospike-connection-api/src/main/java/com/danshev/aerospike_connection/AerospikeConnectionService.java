@@ -29,6 +29,6 @@ import org.apache.nifi.processor.exception.ProcessException;
 @CapabilityDescription("Aerospike Connection Service")
 public interface AerospikeConnectionService extends ControllerService {
     public AerospikeClient getConnection()  throws ProcessException;
-    public void nifiAppend(Key fullKey, Value value) throws ProcessException;
+    public void nifiAppend(Key fullKey, String binName, Value value) throws ProcessException;
     public Record nifiRemove(Key fullKey) throws ProcessException;
 }

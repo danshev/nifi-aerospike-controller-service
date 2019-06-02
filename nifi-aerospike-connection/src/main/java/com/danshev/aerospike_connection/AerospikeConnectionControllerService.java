@@ -149,13 +149,13 @@ public class AerospikeConnectionControllerService extends AbstractControllerServ
     }
 
     @Override
-    public void nifiAppend(Key fullKey, Value value) throws ProcessException {
+    public void nifiAppend(Key fullKey, String binName, Value value) throws ProcessException {
         if (aerospikeClient == null) throw new ProcessException(noConnectionMessage);
         else {
             try {
                 WritePolicy policy = new WritePolicy();
                 policy.sendKey = true;
-                aerospikeClient.operate(policy, fullKey, ListOperation.append("events", value));
+                aerospikeClient.operate(policy, fullKey, ListOperation.append(binName, value));
             } catch (Exception e) {
                 log.error("Error: " + e.getMessage());
                 e.printStackTrace();
