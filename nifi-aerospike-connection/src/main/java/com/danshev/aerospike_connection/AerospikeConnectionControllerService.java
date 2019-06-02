@@ -43,6 +43,8 @@ import java.util.List;
 @CapabilityDescription("Aerospike Connection Service.")
 public class AerospikeConnectionControllerService extends AbstractControllerService implements AerospikeConnectionService {
 
+    private static final String noConnectionMessage = "Aerospike connection unavailable.";
+
     private static final Logger log = LoggerFactory.getLogger(AerospikeConnectionControllerService.class);
 
     public static final PropertyDescriptor AEROSPIKE_HOSTS = new PropertyDescriptor
@@ -148,32 +150,36 @@ public class AerospikeConnectionControllerService extends AbstractControllerServ
 
     @Override
     public void nifiAppend(Key fullKey, Value value) throws ProcessException {
-        try {
-            if (aerospikeClient != null) {
+        if (aerospikeClient == null) throw new ProcessException(noConnectionMessage);
+        else {
+            try {
                 WritePolicy policy = new WritePolicy();
                 policy.sendKey = true;
                 aerospikeClient.operate(policy, fullKey, ListOperation.append("events", value));
+            } catch (Exception e) {
+                log.error("Error: " + e.getMessage());
+                e.printStackTrace();
+                throw new ProcessException(e.getMessage());
             }
-        } catch (Exception e) {
-            log.error("Error: " + e.getMessage());
-            e.printStackTrace();
         }
     }
 
     @Override
     public Record nifiRemove(Key fullKey) throws ProcessException {
-        Record lastValue = null;
-        try {
-            if (aerospikeClient != null) {
+        if (aerospikeClient == null) throw new ProcessException(noConnectionMessage);
+        else {
+            Record lastValue = null;
+            try {
                 lastValue = aerospikeClient.get(null, fullKey);
                 if (lastValue != null) aerospikeClient.delete(null, fullKey);
+            } catch (Exception e) {
+                log.error("Error: " + e.getMessage());
+                e.printStackTrace();
+                throw new ProcessException(e.getMessage());
             }
-        } catch (Exception e) {
-            log.error("Error: " + e.getMessage());
-            e.printStackTrace();
-        }
 
-        return lastValue;
+            return lastValue;
+        }
     }
 
     /*

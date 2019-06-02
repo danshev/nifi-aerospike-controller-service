@@ -2,64 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69208fa6-8c8b-4636-8cb3-2ca5e188d7e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_dbcp_service_api_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_distributed_cache_client_service_api_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_hbase_client_service_api_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_http_context_map_api_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_kerberos_credentials_service_api_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_load_distribution_service_api_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_lookup_service_api_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_proxy_configuration_api_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_record_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_record_serialization_service_api_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_schema_registry_service_api_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_ssl_context_service_api_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_impl_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_spec_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_12_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_apache_jsp_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_apache_jstl_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_annotations_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_continuation_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_deploy_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_jndi_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_plus_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlets_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_11_v20180605.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_toolchain_jetty_schemas_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jasper_apache_el_8_5_24_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jasper_apache_jsp_8_5_24_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/nifi-aerospike-connection-api-nar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/nifi-aerospike-connection-api-nar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/classes/META-INF/DEPENDENCIES" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/classes/META-INF/DEPENDENCIES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/classes/META-INF/bundled-dependencies/nifi-aerospike-connection-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/classes/META-INF/bundled-dependencies/nifi-aerospike-connection-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/maven-shared-archive-resources/META-INF/DEPENDENCIES" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/maven-shared-archive-resources/META-INF/DEPENDENCIES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/nifi-aerospike-connection-api-nar-1.0-SNAPSHOT.nar" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/nifi-aerospike-connection-api-nar-1.0-SNAPSHOT.nar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/test-classes/META-INF/DEPENDENCIES" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/test-classes/META-INF/DEPENDENCIES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-api/target/nifi-aerospike-connection-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-api/target/nifi-aerospike-connection-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-nar/nifi-aerospike-connection-nar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-nar/nifi-aerospike-connection-nar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-nar/target/classes/META-INF/bundled-dependencies/nifi-aerospike-connection-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-nar/target/classes/META-INF/bundled-dependencies/nifi-aerospike-connection-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-nar/target/classes/META-INF/bundled-dependencies/nifi-aerospike-connection-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-nar/target/classes/META-INF/bundled-dependencies/nifi-aerospike-connection-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-nar/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-nar/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection-nar/target/nifi-aerospike-connection-nar-1.0-SNAPSHOT.nar" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection-nar/target/nifi-aerospike-connection-nar-1.0-SNAPSHOT.nar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection/target/nifi-aerospike-connection-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection/target/nifi-aerospike-connection-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection/target/surefire-reports/TEST-com.danshev.aerospike_connection.TestStandardMyService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection/target/surefire-reports/TEST-com.danshev.aerospike_connection.TestStandardMyService.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection/target/surefire-reports/com.danshev.aerospike_connection.TestStandardMyService.txt" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection/target/surefire-reports/com.danshev.aerospike_connection.TestStandardMyService.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/target/" />
@@ -80,7 +23,17 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="161" column="59" selection-start-line="161" selection-start-column="59" selection-end-line="161" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -101,10 +54,10 @@
         <option value="$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike_connection/TestProcessor.java" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection/src/test/java/com/danshev/aerospike_connection/TestStandardMyService.java" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection-api/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionService.java" />
-        <option value="$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection-api/pom.xml" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection-nar/pom.xml" />
         <option value="$PROJECT_DIR$/nifi-aerospike-connection-api-nar/pom.xml" />
+        <option value="$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java" />
       </list>
     </option>
   </component>
@@ -133,6 +86,41 @@
             <path>
               <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
               <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aerospike-connection-controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aerospike-connection-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="nifi-aerospike-connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="aerospike_connection" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -227,13 +215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="160" column="5" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/main/resources/META-INF/services/org.apache.nifi.controller.ControllerService">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -280,6 +261,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nifi-aerospike-connection/src/main/java/com/danshev/aerospike_connection/AerospikeConnectionControllerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="161" column="59" selection-start-line="161" selection-start-column="59" selection-end-line="161" selection-end-column="59" />
         </state>
       </provider>
     </entry>
